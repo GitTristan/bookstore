@@ -1,3 +1,5 @@
 <h1><%= @book.name %></h1>
 
+<%= link_to "Edit", "/books/#{@book.id}/edit" %>
+
 <p>Pages: <%= @book.pages %></p>

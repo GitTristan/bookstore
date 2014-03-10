@@ -14,7 +14,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new params[:book]
     @book.save
-    redirect_to "/books/#{@book.id}"
+    redirect_to @book
   end
   
   def edit

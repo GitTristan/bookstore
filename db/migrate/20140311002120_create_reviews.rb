@@ -4,10 +4,10 @@ class CreateReviews < ActiveRecord::Migration
       t.string :name
       t.integer :rating
       t.text :body
-      t.belongs_to :books
+      t.belongs_to :book
 
       t.timestamps
     end
-    add_index :reviews, :books_id
+    add_index :reviews, :book_id
   end
 end

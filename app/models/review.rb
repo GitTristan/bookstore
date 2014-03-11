@@ -1,4 +1,4 @@
 class Review < ActiveRecord::Base
-  belongs_to :books
+  belongs_to :book
   attr_accessible :body, :name, :rating
 end

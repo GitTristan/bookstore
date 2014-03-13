@@ -25,11 +25,11 @@ ActiveRecord::Schema.define(:version => 20140311002120) do
     t.string   "name"
     t.integer  "rating"
     t.text     "body"
-    t.integer  "books_id"
+    t.integer  "book_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  add_index "reviews", ["books_id"], :name => "index_reviews_on_books_id"
+  add_index "reviews", ["book_id"], :name => "index_reviews_on_book_id"
 
 end

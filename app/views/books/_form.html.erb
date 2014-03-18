@@ -1,26 +1,7 @@
-<%= form_for @book do |f| %>
-  <% if @book.errors.any? %>
-    <div class="errors">
-      This form contains errors:
-      <ul>
-        <% @book.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-        <% end%>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for @book do |f| %>
+<%= f.input :name %>
+<%= f.input :pages %>
+<%= f.input :summary %>
 
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div>
-    <%= f.label :pages %>
-    <%= f.text_field :pages %>
-  </div>
-  <div>
-    <%= f.label :summary %>
-    <%= f.text_area :summary %>
-  </div>
 <%= f.submit %>
 <% end %>

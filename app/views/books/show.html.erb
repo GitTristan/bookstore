@@ -7,6 +7,7 @@
 <p><%= simple_format @book.summary %></p>
 
 <h2>Reviews</h2>
+<%= link_to "New Review", new_book_review_path(@book) %>
 
 <% @reviews.each do |review| %>
 <div>

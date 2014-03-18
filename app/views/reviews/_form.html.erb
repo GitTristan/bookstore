@@ -1,15 +1,8 @@
-<%= form_for [@book, @review] do |f| %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div>
-    <%= f.label :rating %>
-    <%= f.text_field :rating %>
-  </div>
-  <div>
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
-<%= f.submit %>
+<%= simple_form_for [@book, @review] do |f| %>
+ 
+<%= f.input :name %>
+<%= f.input :rating %>
+<%= f.input :body %>
+
+<%= f.submit class: "btn btn-primary" %>
 <% end %>

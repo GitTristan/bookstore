@@ -14,7 +14,7 @@
   <% simple_format review.body %>
   <%= link_to [@book, review] do %>
   
-  <p style="font-style: italic"><%= review.name %> gave this book a <%= review.rating %> star rating.</p>
+  <p style="font-weight: bold"><%= review.name %> gave this book a <%= review.rating %> star rating.</p>
  <% end %>
 </div>
 <% end %>
